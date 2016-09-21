@@ -1,0 +1,32 @@
+//Appointment.java          //Author:Shafin Zaman
+
+import java.text.DecimalFormat;
+
+public class Appointment
+{
+  String name;
+  int day, month, year;
+  DecimalFormat time = new DecimalFormat("##:##"); 
+  boolean isItAM;
+  
+  public Appointment()
+  {
+    name = "Default";
+    day = 1;
+    month = 1;
+    year = 2000;
+    time = "12:00";
+    isItAM = true; 
+  }
+  
+  public Appointment(String nme, int dy, int mnth, int yr, DecimalFormat tme, boolean aMisIt)
+  {
+    this.name = nme;
+    this.day = dy;
+    this.month = mnth;
+    this.year = yr;
+    this.time = tme;
+    this.isItAM = aMisIt;
+  }
+}
+    
